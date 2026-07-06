@@ -33,7 +33,7 @@ You will reuse this in later weeks. So do it properly once.
 
 ## Answer
 
-Add your answer here...
+I believe that a traditional degree is not the most reliable path to becoming good at software or DevOps work, even though I am currently pursuing one. Most people around me family, classmates, and general career advice treat the degree as the main proof of competence and the safest route into the industry. But when I look at actual job postings and the skills employers test for in interviews, they focus almost entirely on hands-on ability: can you write working code, debug a broken pipeline, configure infrastructure, and think through a real problem. A lot of that isn't taught directly in a classroom; it's built through labs, personal projects, and repetition. I'm finishing my degree because it still opens doors and reduces risk, not because I think it's what actually makes someone good at the job.
 
 ---
 
@@ -55,11 +55,12 @@ Write each truth in this format:
 
 ### Truth
 
-Add your answer here...
+I learn technical concepts faster and retain them better through video explanations than through reading written documentation.
 
 ### Evidence from my life
 
-Add your answer here...
+When learning new DevOps/coding topics, I tried both approaches — reading official docs/written guides and watching video walkthroughs of the same material. I consistently understood the concepts more clearly and remembered them longer after watching videos, especially when someone demonstrated the steps in real time rather than just describing them in text.
+
 
 ---
 
@@ -67,23 +68,20 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+ Repeated practice of a skill leads to significantly better retention than doing it only once.
 
 ### Evidence from my life
-
-Add your answer here...
+ When learning new commands, tools, or concepts in this course, I noticed a clear difference between skills I practiced multiple times versus ones I only did once. The repeated ones stuck — I could recall and use them without much thought later — while the one-off attempts faded quickly and I had to relearn them from scratch when they came up again.
 
 ---
 
 ## Truth #3
 
 ### Truth
-
-Add your answer here...
+ Struggling through an error myself before looking up the answer leads to better understanding and fewer repeated mistakes than immediately searching for the fix.
 
 ### Evidence from my life
-
-Add your answer here...
+While working through course labs, I compared what happened when I sat with an error and tried to diagnose it myself versus when I jumped straight to Googling or asking for the solution. When I worked through it myself first, I understood the root cause and rarely made that same mistake again. When I skipped straight to the fix, I often hit the same or a similar error later because I hadn't actually understood why it happened.
 
 ---
 
@@ -135,11 +133,23 @@ Include this line:
 
 ## Your Article
 
-Add your answer here...
+**From Zero to Infrastructure: How Spencer Enchill Built a Career in AI Systems**
+
+Three years ago, Spencer Enchill had no technical background and no roadmap — just a decision to learn DevOps and cloud engineering from the ground up. That decision shaped everything that followed.
+
+The early months were spent mastering fundamentals: Linux systems, Git workflows, containerization with Docker, and infrastructure as code using Terraform. Rather than rushing through concepts, Spencer built small, deliberate projects after each module, publishing progress notes and code on GitHub as a personal record of growth.
+
+By the second year, Spencer shifted focus toward MLOps and AI infrastructure, a natural extension of the DevOps foundation. Spencer built and deployed an end-to-end machine learning pipeline, automating model training, testing, and deployment using Kubernetes and cloud-native tools. The project became the centerpiece of a growing portfolio, proving the ability to ship working systems, not just describe them.
+
+Certifications followed as proof points: AWS Certified Solutions Architect Associate, then AWS Certified DevOps Engineer – Professional, and eventually AWS Certified Machine Learning – Specialty.
+
+Spencer earned a junior role at a company building AI-powered products, working remotely while based locally. There, Spencer contributed to internal tooling that cut model deployment time significantly, work that opened doors to larger infrastructure projects.
+
+Looking back, the throughline wasn't talent or connections — it was consistency. Practiced repetition, hands-on debugging, and a refusal to skip fundamentals turned someone with zero experience into an engineer trusted with production AI systems.
 
 ### Public Link
 
-Paste your link here:
+https://www.linkedin.com/posts/spencerenchill_join-the-dmi-devops-micro-internship-share-7479976395083841536-TG0Q/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGRQq6IBvhyFikdnuZmUnAgoctctbC0h3m4
 
 `__________________________`
 
@@ -173,7 +183,7 @@ If Yes:
 
 ## Answer
 
-Add your answer here...
+Yes. I felt a little bad at first but then i realized i had gotten my work done and everything was fine 
 
 ---
 
@@ -199,16 +209,16 @@ Choose books that improve:
 
 ## Book List
 
-1. Add your answer here...
-2. Add your answer here...
-3. Add your answer here...
-4. Add your answer here...
-5. Add your answer here...
-6. Add your answer here...
-7. Add your answer here...
-8. Add your answer here...
-9. Add your answer here...
-10. Add your answer here...
+1. Atomic Habits — James Clear
+2. Deep Work — Cal Newport
+3. The Psychology of Money — Morgan Housel
+4. The 7 Habits of Highly Effective People — Stephen R. Covey
+5. How to Win Friends and Influence People — Dale Carnegie
+6. The Lean Startup — Eric Ries
+7. Think and Grow Rich — Napoleon Hill
+8. The Pragmatic Programmer — Andrew Hunt & David Thomas
+9. Clean Code: A Handbook of Agile Software Craftsmanship — Robert C. Martin
+10. The Personal MBA — Josh Kaufman
 
 ---
 
@@ -237,12 +247,12 @@ List topics only. No need to share numbers.
 
 ## My Metrics
 
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
+* Learning hours per week
+* New skills or certifications completed
+* Projects completed and documented
+* Study or deep work sessions
+* Sleep hours and physical exercise
+* Monthly spending and savings tracker
 * Add your answer here...
 * Add your answer here...
 * Add your answer here...
@@ -270,7 +280,7 @@ Examples:
 
 **Yes / No**
 
-Answer:
+Answer: No
 
 Add your answer here...
 
@@ -290,7 +300,9 @@ Example:
 
 #### My Weekly Routine
 
-Add your answer here...
+Mon–Thu: 60 min deep work
+ Sat: DMI session
+ Sun: Weekly review
 
 ---
 
@@ -298,11 +310,11 @@ Add your answer here...
 
 #### When Will You Do DMI Work? (Days + Time)
 
-Add your answer here...
+During the week
 
 #### How Many Sessions Per Week?
 
-Add your answer here...
+As many as i can
 
 ---
 
@@ -316,7 +328,8 @@ Examples:
 
 #### My Distraction Rules
 
-Add your answer here...
+Make sure my phone is away during live sessions
+I will always make sure to have a quiet environment
 
 ---
 
@@ -324,15 +337,15 @@ Add your answer here...
 
 ### Biggest insight I got about myself this week
 
-Add your answer here...
+I have not had any insights about myself this week yet
 
 ### My biggest weakness/loop I noticed
 
-Add your answer here...
+I have not noticed any weakness 
 
 ### One system I will implement from this week (exact habit + time)
 
-Add your answer here...
+I will make sure to try and finish my assignments right after class
 
 ### LinkedIn Post
 
