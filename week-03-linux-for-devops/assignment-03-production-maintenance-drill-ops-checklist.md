@@ -20,26 +20,26 @@ Verify that the deployed React application is reachable from the browser and con
 
 #### Screenshot 1 — Browser showing the React app with your Full Name visible on the UI
 
-Add your screenshot here.
 
+[Assignment 03Screenshot 1](screenshots/03-week-03-linux-for-devops.png)
 ---
 
 #### Screenshot 2 — Output of `ip a`
 
-Add your screenshot here.
 
+[Assignment 03Screenshot 2](screenshots/03-week-03-linux-for-devops2.png)
 ---
 
 #### Screenshot 3 — Output of `sudo ss -tulpen`
 
-Add your screenshot here.
+[Assignment 03Screenshot 2](screenshots/03-week-03-linux-for-devops3.png)
 
 ---
 
 #### Screenshot 4 — Output of `sudo ufw status`
 
-Add your screenshot here.
-
+[Assignment 03Screenshot 2](screenshots/03-week-03-linux-for-devops4.png)
+ufw is inactive because firewall rules are being managed at the AWS Security Group level instead. Port 22 and port 80 are controlled there.
 ---
 
 ### Notes
@@ -48,19 +48,19 @@ Answer the following in your own words:
 
 **1. What proves Nginx is listening on 0.0.0.0:80?**
 
-Write your answer here.
+I ran sudo ss -tulpen and saw a TCP LISTEN entry on 0.0.0.0:80 with the process name nginx , this confirms Nginx is actively accepting HTTP connections on all network interfaces.
 
 ---
 
 **2. What proves SSH is active on port 22?**
 
-Write your answer here.
+I can see sshd listed as a LISTEN process on 0.0.0.0:22 in the ss output and the fact that I'm actively connected to this server right now via SSH further confirms it's working.
 
 ---
 
 **3. Did you find any unexpected open ports? Explain briefly.**
 
-Write your answer here.
+No unexpected ports. The only externally relevant ports were 22 (SSH) and 80 (Nginx), both of which are expected. The other entries (ports 53 and 323) were bound to 127.0.0.x — localhost only meaning they're internal to the server and not reachable from outside.
 
 ---
 
@@ -74,19 +74,19 @@ Verify that Nginx is properly installed, running, enabled at boot, and safely co
 
 #### Screenshot 1 — Output of `systemctl status nginx --no-pager`
 
-Add your screenshot here.
+[Assignment 03Screenshot Task2-1](screenshots/03-week-03-linux-for-devops-task2-1.png)
+
 
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t`
-
-Add your screenshot here.
+[Assignment 03Screenshot Task2-2](screenshots/03-week-03-linux-for-devops-task2-2.png)
 
 ---
 
 #### Screenshot 3 — Output of `sudo ss -lptn '( sport = :80 )'`
 
-Add your screenshot here.
+[Assignment 03Screenshot Task2-3](screenshots/03-week-03-linux-for-devops-task2-3.png)
 
 ---
 
@@ -96,14 +96,12 @@ Answer the following in your own words:
 
 **1. What happens if Nginx fails to restart in production?**
 
-Write your answer here.
-
+If Nginx fails to restart, the web server goes down and users get a connection error when trying to reach the site. No HTTP traffic gets served the application becomes completely unavailable until Nginx is recovered. That's why I always run sudo nginx -t before restarting, to catch config errors before they cause downtime.
 ---
 
 **2. What's your basic rollback plan?**
 
-Write your answer here.
-
+If a config change breaks Nginx, I would revert the change in /etc/nginx/sites-available/default using sudo nano, run sudo nginx -t to confirm the syntax is clean again, then run sudo systemctl restart nginx to bring it back up. If I wasn't sure what changed, I could also use git diff to compare against a known good version of the config file.
 ---
 
 # Task 3 — Logs & Request Trace
@@ -116,19 +114,18 @@ Verify real traffic flow and analyze logs to understand system behavior and erro
 
 #### Screenshot 1 — Output of `sudo tail -n 30 /var/log/nginx/access.log`
 
-Add your screenshot here.
-
+[Assignment 03Screenshot Task3-1](screenshots/03-week-03-linux-for-devops-task3-1.png)
 ---
 
 #### Screenshot 2 — Output of `sudo tail -n 30 /var/log/nginx/error.log`
 
-Add your screenshot here.
-
+[Assignment 03Screenshot Task3-2](screenshots/03-week-03-linux-for-devops-task3-2.png)
 ---
 
 #### Screenshot 3 — Output of `sudo journalctl -u nginx --no-pager -n 50`
 
-Add your screenshot here.
+
+[Assignment 03Screenshot Task3-3](screenshots/03-week-03-linux-for-devops-task3-3.png)
 
 ---
 
@@ -141,20 +138,19 @@ Answer the following in your own words:
 - If yes, mention 1–2 example error lines from the logs and explain what each one means in simple terms.
 - If no, explain what it means if the error log is empty or shows no recent errors during your check.
 
-Write your answer here.
+No errors were found in either log. The error log returned no output at all, and the journalctl entries show only clean Started, Stopped, and Deactivated successfully events no failed or crashed entries anywhere.
 
 ---
 
 **2. If there were no errors, what does that indicate about the system?**
 
-Write your answer here.
+An empty error log and clean journalctl history means Nginx hasn't encountered any internal errors or failed lifecycle events during this period. It's a positive signal about current system health, though it only reflects the window checked  logs should be reviewed regularly as traffic and usage grow.
 
 ---
 
 **3. Based on the access logs, were your curl requests visible in the log entries? What does that prove about traffic flow?**
 
-Write your answer here.
-
+Yes. When I ran curl http://100.58.92.202 earlier, it appeared in the access log as a GET request returning a 200 status with the curl user agent. This confirms the full traffic path is working end-to-end  the request left the client, reached Nginx, was served correctly, and was logged.
 ---
 
 # Task 4 — System Resource Health Check (Capacity Red Flags)
@@ -166,26 +162,23 @@ Assess server capacity and detect potential performance or failure risks.
 ### Evidence
 
 #### Screenshot 1 — Output of `uptime`
-
-Add your screenshot here.
+[Assignment 03Screenshot Task4-1](screenshots/03-week-03-linux-for-devops-task4-1.png)
 
 ---
 
 #### Screenshot 2 — Output of `free -h`
-
-Add your screenshot here.
-
+[Assignment 03Screenshot Task4-2](screenshots/03-week-03-linux-for-devops-task4-2.png)
 ---
 
 #### Screenshot 3 — Output of `df -h`
 
-Add your screenshot here.
+[Assignment 03Screenshot Task4-3](screenshots/03-week-03-linux-for-devops-task4-3.png)
 
 ---
 
 #### Screenshot 4 — Output of `sudo du -sh /var/* | sort -h`
 
-Add your screenshot here.
+[Assignment 03Screenshot Task4-4](screenshots/03-week-03-linux-for-devops-task4-4.png)
 
 ---
 
@@ -195,13 +188,11 @@ Answer the following in your own words:
 
 **1. Which resource looks most critical right now? (CPU/load, memory, or disk) Explain why.**
 
-Write your answer here.
-
+I ran uptime, free -h, df -h, and sudo du -sh /var/* | sort -h to check CPU, memory, and disk. None of the three show any critical signal right now  CPU load is 0.00, memory has 555Mi available, and disk is at 50%. If I had to flag one for ongoing attention it would be disk, since /var/lib (370M) and /var/cache (150M) can grow quietly over time through package installs and log accumulation, unlike CPU or memory pressure which usually show visible symptoms first.
 ---
 
 **2. What happens if disk becomes 100% full in a production server?**
-
-Write your answer here.
+Logs stop writing new entries, which is dangerous because that's exactly when you need them most during an active incident. Applications fail if they need temporary disk space to operate. Package managers and build tools break. If a database were running locally, it could refuse writes or become corrupted. In severe cases even SSH access can become unreliable, making recovery much harder.
 
 ---
 
@@ -215,19 +206,21 @@ Ensure the correct React build is deployed and Nginx is serving it properly.
 
 #### Screenshot 1 — Output of `ls -lah /var/www/html | head -n 20`
 
-Add your screenshot here.
+[Assignment 03Screenshot Task5-1](screenshots/03-week-03-linux-for-devops-task5-1.png)
+
 
 ---
 
 #### Screenshot 2 — Output of `grep -R "Deployed by" -n /var/www/html 2>/dev/null | head`
 
-Add your screenshot here.
+[Assignment 03Screenshot Task5-2](screenshots/03-week-03-linux-for-devops-task5-2.png)
 
 ---
 
 #### Screenshot 3 — Output of `grep -n "try_files" /etc/nginx/sites-available/default`
 
-Add your screenshot here.
+[Assignment 03Screenshot Task5-3](screenshots/03-week-03-linux-for-devops-task5-3.png)
+
 
 ---
 
@@ -237,7 +230,8 @@ Answer the following in your own words:
 
 **1. How do you confirm that the correct version of the application is deployed?**
 
-Write your answer here.
+I confirmed the correct version through three checks. First, ls -lah /var/www/html showed a genuine React production build in place — index.html, a static/ folder with compiled JS/CSS bundles, and standard CRA metadata files like asset-manifest.json and manifest.json. Second, grep -R "Deployed by" found my personalization text compiled into the live JavaScript bundle inside /var/www/html, proving this specific build not a generic or stale one — is what's actually being served. Third, grep -n "try_files" confirmed Nginx is correctly configured to fall back to index.html for unmatched routes, ensuring the React SPA works correctly beyond just the homepage.
+
 
 ---
 
@@ -251,19 +245,19 @@ Simulate a real-world Nginx misconfiguration and recover the service safely.
 
 #### Screenshot 1 — Output of `sudo nginx -t` showing the syntax error (broken config)
 
-Add your screenshot here.
+[Assignment 03Screenshot Task6-1](screenshots/03-week-03-linux-for-devops-task6-1.png)
 
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t` showing syntax ok (fixed config)
 
-Add your screenshot here.
+[Assignment 03Screenshot Task6-2](screenshots/03-week-03-linux-for-devops-task6-2.png)
 
 ---
 
 #### Screenshot 3 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-Add your screenshot here.
+[Assignment 03Screenshot Task6-3](screenshots/03-week-03-linux-for-devops-task6-3.png)
 
 ---
 
@@ -273,19 +267,20 @@ Answer the following in your own words:
 
 **1. What caused the configuration failure?**
 
-Write your answer here.
+I removed the semicolon from the try_files $uri $uri/ /index.html; directive on line 51 of /etc/nginx/sites-available/default. Without the semicolon, Nginx's parser couldn't tell where that directive ended, so it kept reading into the next line and reported an unexpected } error one line later than the actual mistake.
 
 ---
 
 **2. How did you fix the issue?**
 
-Write your answer here.
+I reopened the config file with sudo nano, navigated back to line 51, and restored the missing semicolon. I then ran sudo nginx -t to confirm the syntax was valid before touching the live service. Only after seeing syntax is ok did I run sudo systemctl restart nginx, followed by curl -I to confirm the app was serving correctly with a 200 OK response.
+
 
 ---
 
 **3. How can you avoid this kind of issue in real production systems?**
 
-Write your answer here.
+Always run sudo nginx -t after any config change before restarting  this catches syntax errors without risking downtime. Keep Nginx config files in version control so any bad change can be instantly reverted. Use a staging environment to test config changes before they reach production. And where possible, automate config validation in a CI/CD pipeline so broken configs never reach the live server at all.
 
 ---
 
@@ -299,13 +294,13 @@ Simulate missing deployment content and recover the application safely.
 
 #### Screenshot 1 — Output of `curl -I http://<public-ip>` showing failure (non-200 response)
 
-Add your screenshot here.
+[Assignment 03Screenshot Task7-1](screenshots/03-week-03-linux-for-devops-task7-1.png)
 
 ---
 
 #### Screenshot 2 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-Add your screenshot here.
+[Assignment 03Screenshot Task7-2](screenshots/03-week-03-linux-for-devops-task7-2.png)
 
 ---
 
@@ -315,20 +310,18 @@ Answer the following in your own words:
 
 **1. What caused the application to break in this scenario?**
 
-Write your answer here
+I moved the entire /var/www/html directory to a backup location and replaced it with an empty directory at the same path. Nginx remained running and correctly configured, but with no content in the web root  not even an index.html fallback it returned a 403 Forbidden error instead of serving the React app.
 
 ---
 
 **2. How did you fix the issue and restore the application?**
-
-Write your answer here.
+I deleted the empty broken directory with sudo rm -rf /var/www/html, then restored the original deployment by moving the backup back into place with sudo mv /var/www/html_backup /var/www/html. After restarting Nginx with sudo systemctl restart nginx, I confirmed full recovery by running curl -I, which returned HTTP/1.1 200 OK with the same Content-Length: 644 as before proving the exact same build was successfully restored.
 
 ---
 
 **3. What steps would you take to prevent this kind of issue in real production systems?**
 
-Write your answer here.
-
+Always back up the existing deployment before making any changes, exactly as I did here by using mv instead of rm. In real production, deploy to a versioned directory and use a symlink (e.g., /var/www/current) to switch between versions atomically  that way a failed deploy never leaves the live path empty. Add post-deployment health checks that automatically verify the site returns a 200 OK immediately after every deploy, catching failures within seconds rather than waiting for users to report them.
 ---
 
 # Task 8 — Security & Reliability Review
@@ -343,31 +336,31 @@ Answer the following in your own words:
 
 **1. Why is SSH key-based authentication more secure than sharing passwords?**
 
-Write your answer here.
+SSH keys use asymmetric encryption  a private key stays on my machine and never travels over the network, while only the public key lives on the server. Even if someone intercepts the connection, they can't derive the private key from it. Passwords, by contrast, are transmitted during login and can be brute-forced, guessed, or leaked. A .pem key file is also much longer and more complex than any password a human would realistically choose.
 
 ---
 
 **2. Why should only required ports be open on a production server?**
 
-Write your answer here.
+Every open port is a potential attack surface. As I saw in my own access logs, bots were probing my server within hours of it going live  scanning for login pages, .env files, and known vulnerabilities. If unnecessary ports were open, those scans could find exploitable services. Keeping only port 22 (SSH) and port 80 (Nginx) open limits what an attacker can even reach.
 
 ---
 
 **3. Why is it important for Nginx to be enabled on boot?**
 
-Write your answer here.
+If the EC2 instance restarts  whether from planned maintenance, a crash, or an AWS event — Nginx won't start automatically unless it's enabled. That means the site would be down until someone manually SSH'd in and started it. Enabling it with systemctl enable nginx ensures the service comes back up on its own without any manual intervention.
 
 ---
 
 **4. What are the risks of sharing secrets, keys, or credentials publicly?**
 
-Write your answer here.
+Anyone who finds them can access your infrastructure  spin up resources at your cost, steal data, or destroy everything. AWS credentials exposed publicly have led to massive unexpected bills within hours as attackers spin up mining operations. A .pem key shared publicly gives anyone full SSH access to your server. Once credentials are exposed, the only safe response is to revoke and rotate them immediately.
 
 ---
 
 **5. Why should cloud resources be stopped or terminated when they are no longer needed?**
 
-Write your answer here.
+AWS charges for running resources even when they're idle. A t3.micro left running after the Free Tier expires costs money every hour. Beyond cost, abandoned running instances are a security risk — they're still publicly reachable, still being probed by bots, but no longer actively monitored. Terminating unused resources reduces both your bill and your attack surface.
 
 ---
 
@@ -377,7 +370,7 @@ Write your answer here.
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
+[Paste your LinkedIn post URL here:](https://lnkd.in/p/dKsSXzEA)
 
 `__________________________`
 
@@ -385,7 +378,9 @@ Paste your LinkedIn post URL here:
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+
+[Assignment 03Screenshot Task7-2](screenshots/linkedin2.png)
+
 
 ---
 
@@ -399,17 +394,17 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Screenshots (browser, ip a, ss -tulpen, ufw status) + Notes answered
-- [ ] Task 2: Screenshots (nginx status, nginx -t, ss port 80) + Notes answered
-- [ ] Task 3: Screenshots (access log, error log, journalctl) + Notes answered
-- [ ] Task 4: Screenshots (uptime, free -h, df -h, du -sh) + Notes answered
-- [ ] Task 5: Screenshots (ls html, grep deployed by, grep try_files) + Notes answered
-- [ ] Task 6: Screenshots (nginx -t fail, nginx -t pass, curl recovery) + Notes answered
-- [ ] Task 7: Screenshots (curl failure, curl recovery) + Notes answered
-- [ ] Task 8: Security & Reliability Notes answered
-- [ ] LinkedIn post published and URL submitted
-- [ ] Full Name visible in all required screenshots
-- [ ] No sensitive data exposed
+- [ ✅] Task 1: Screenshots (browser, ip a, ss -tulpen, ufw status) + Notes answered
+- [✅ ] Task 2: Screenshots (nginx status, nginx -t, ss port 80) + Notes answered
+- [ ✅] Task 3: Screenshots (access log, error log, journalctl) + Notes answered
+- [✅ ] Task 4: Screenshots (uptime, free -h, df -h, du -sh) + Notes answered
+- [✅ ] Task 5: Screenshots (ls html, grep deployed by, grep try_files) + Notes answered
+- [✅ ] Task 6: Screenshots (nginx -t fail, nginx -t pass, curl recovery) + Notes answered
+- [ ✅] Task 7: Screenshots (curl failure, curl recovery) + Notes answered
+- [✅ ] Task 8: Security & Reliability Notes answered
+- [✅ ] LinkedIn post published and URL submitted
+- [✅ ] Full Name visible in all required screenshots
+- [✅ ] No sensitive data exposed
 
 ---
 
