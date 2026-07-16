@@ -20,21 +20,22 @@ Demonstrate understanding of AWS basics and Free Tier usage by answering the fol
 
 #### Question 1 — What is an AWS account, and why do you need it at this stage?
 
-Write your answer here.
-
+An AWS account is your personal/organizational entry point into Amazon's cloud, it gives you a secure, billed environment to create and manage resources like EC2 servers, storage, and networking. You need it now because Linux skills become practical once you're running commands on real remote servers (EC2 instances) instead of just your local machine.
 ---
 
 #### Question 2 — What is AWS Free Tier, and how long does it last?
 
-Write your answer here.
+AWS Free Tier is a limited allowance of AWS services you can use at no cost, meant to let beginners practice without racking up bills,it comes in three types: 12 months free, always free (e.g., limited Lambda calls), and short-term trials for specific services.
+---
+
 
 ---
 
-#### Question 3 — Name three AWS Free Tier services and their free usage limits.
+#### Question 3 — Name three AWS Free Tier services and their free usage limits
 
-Write your answer here.
-
----
+EC2 (Elastic Compute Cloud) — 750 hours/month of a t2.micro or t3.micro instance (enough to run one instance continuously all month) — this is what you'll use for Linux practice
+S3 (Simple Storage Service) — 5 GB of standard storage, plus 20,000 GET and 2,000 PUT requests/month
+RDS (Relational Database Service) — 750 hours/month of a db.t2.micro/db.t3.micro instance, plus 20 GB of storage
 
 # Task 2 — Create AWS Free Tier Account
 
@@ -56,10 +57,8 @@ Confirm that your AWS account setup is complete by navigating to the Account sec
 
 #### Screenshot 1 — AWS Account page showing account name (email may be blurred)
 
-Add your screenshot here.
-
+[Assignment 01 Screenshot](screenshots/week-03-linux-for-devops.jpeg)
 ---
-
 # Submission Instructions
 
 - Add all required screenshots in your GitHub repository submission
