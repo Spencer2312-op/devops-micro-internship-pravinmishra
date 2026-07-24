@@ -79,8 +79,8 @@ This is not a course. It is an internship-style program — real deployments, re
  Week 03 → Linux & Bash for DevOps 
  [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/)
 
-<!-- Week 04 → Git & GitHub -->
-<!-- [![Week 04 – Git](./badges/week-04.svg)](./week-04-github/) -->
+ Week 04 → Git & GitHub 
+[![Week 04 – Git](./badges/week-04.svg)](./week-04-github/)
 
 <!-- Week 05 → DevOps Lifecycle & Agile -->
 <!-- [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) -->
@@ -134,7 +134,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | 01 | Success Mindset | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/spencerenchill_join-the-dmi-devops-micro-internship-share-7479976395083841536-TG0Q/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGRQq6IBvhyFikdnuZmUnAgoctctbC0h3m4| — |
 | 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
 | 03 | Linux & Bash for DevOps | ✅ Completed |✅ Completed | https://www.linkedin.com/posts/spencerenchill_dmibypravinmishra-agenticai-claudecode-ugcPost-7483847318698614785-LEQu/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGRQq6IBvhyFikdnuZmUnAgoctctbC0h3m4 | — |
-| 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
+| 04 | Git & GitHub | ✅ Completed | ✅ Completed|https://www.linkedin.com/posts/spencerenchill_dmibypravinmishra-agenticai-devops-share-7486306499208675328-6X6O/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGRQq6IBvhyFikdnuZmUnAgoctctbC0h3m4 | — |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
