@@ -117,7 +117,6 @@ Open a Pull Request from `feature-readme-update` on your fork to `main` on the u
 
 Paste your Pull Request URL here:
 
-`Add your URL here`
 https://github.com/pravinmishraaws/devops-micro-internship-interviews/pull/351
 ---
 
@@ -129,12 +128,10 @@ https://github.com/pravinmishraaws/devops-micro-internship-interviews/pull/351
 
 [Paste your LinkedIn post URL here:]
 
-`Add your URL here`
 (https://www.linkedin.com/posts/spencerenchill_dmibypravinmishra-agenticai-devops-share-7486003558585266176-VVjf/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGRQq6IBvhyFikdnuZmUnAgoctctbC0h3m4)
 ---
 
 #### Screenshot — LinkedIn post showing your successfully created Pull Request
-
 
 [Assignment 05Screenshot linkedin](screenshots/week-04-git-and-github-05linkedin.png)
 
@@ -154,7 +151,6 @@ https://github.com/pravinmishraaws/devops-micro-internship-interviews/pull/351
 
 Paste your fork URL here:
 
-`Add your URL here`
 https://github.com/Spencer2312-op/devops-micro-internship-interviews
 ---
 

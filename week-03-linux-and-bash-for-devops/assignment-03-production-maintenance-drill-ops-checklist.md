@@ -370,9 +370,7 @@ AWS charges for running resources even when they're idle. A t3.micro left runnin
 
 #### LinkedIn Post URL
 
-[Paste your LinkedIn post URL here:](https://lnkd.in/p/dKsSXzEA)
-
-`Add your URL here`
+(https://lnkd.in/p/dKsSXzEA)
 
 ---
 

@@ -402,7 +402,7 @@ It uses variables to store personal details, an array to hold the tools list, a 
 
 Paste your LinkedIn post URL here:
 
-`__________________https://lnkd.in/p/dTDTUWSi________`
+https://lnkd.in/p/dTDTUWSi
 
 ---
 

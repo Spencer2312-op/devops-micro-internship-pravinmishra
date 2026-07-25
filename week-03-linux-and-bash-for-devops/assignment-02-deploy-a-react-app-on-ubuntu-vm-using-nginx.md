@@ -142,7 +142,6 @@ Verify the React application is publicly accessible via the server's public IP.
 
 (https://lnkd.in/p/dmW5BsJa)
 
-`Add your URL here`
 
 ---
 

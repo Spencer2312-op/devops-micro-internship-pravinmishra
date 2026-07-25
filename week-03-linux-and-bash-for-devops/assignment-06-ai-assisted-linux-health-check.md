@@ -442,7 +442,7 @@ Gather: The Bash script collected evidence. Analyze: Claude identified the failu
 
 Paste your LinkedIn post URL here:
 
-`________https://www.linkedin.com/posts/spencerenchill_dmibypravinmishra-agenticai-claudecode-ugcPost-7483847318698614785-LEQu/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGRQq6IBvhyFikdnuZmUnAgoctctbC0h3m4__________________`
+https://www.linkedin.com/posts/spencerenchill_dmibypravinmishra-agenticai-claudecode-ugcPost-7483847318698614785-LEQu/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGRQq6IBvhyFikdnuZmUnAgoctctbC0h3m4
 
 ---
 
@@ -457,8 +457,7 @@ Paste your LinkedIn post URL here:
 
 Paste the URL of your GitHub folder or repository containing the assignment files here:
 
-`Add your URL here`
-
+https://github.com/Spencer2312-op/devops-micro-internship-pravinmishra.git
 ---
 
 # Submission Instructions

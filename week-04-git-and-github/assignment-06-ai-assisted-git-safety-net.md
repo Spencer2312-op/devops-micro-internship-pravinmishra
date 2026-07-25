@@ -202,8 +202,7 @@ Push your branch and open a real Pull Request, using `/pr-ready`'s drafted title
 ---
 
 #### PR Link
-
-[Add your PR URL here...](https://github.com/Spencer2312-op/devops-micro-internship-interviews/pull/1)
+(https://github.com/Spencer2312-op/devops-micro-internship-interviews/pull/1)
 
 ---
 
@@ -275,7 +274,7 @@ Publish a LinkedIn post summarizing what you built and what you learned about co
 
 #### LinkedIn Post URL
 
-[Add your LinkedIn post URL here...](https://www.linkedin.com/posts/spencerenchill_dmibypravinmishra-agenticai-devops-share-7486306499208675328-6X6O/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGRQq6IBvhyFikdnuZmUnAgoctctbC0h3m4)
+(https://www.linkedin.com/posts/spencerenchill_dmibypravinmishra-agenticai-devops-share-7486306499208675328-6X6O/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGRQq6IBvhyFikdnuZmUnAgoctctbC0h3m4)
 
 ---
 
@@ -305,7 +304,6 @@ Add 3-5 bullet points on what you learned this week.
 
 Paste your forked repository URL here:
 
-`Add your URL here`
 https://github.com/Spencer2312-op/devops-micro-internship-pravinmishra.git
 ---
 

@@ -160,10 +160,9 @@ Install and start Nginx on your EC2 instance, then copy `index.html` and `style.
 
 #### LinkedIn Post URL
 
-[Paste your LinkedIn post URL here:](https://www.linkedin.com/posts/spencerenchill_dmibypravinmishra-agenticai-devops-share-7485964919578910721-J6s3/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGRQq6IBvhyFikdnuZmUnAgoctctbC0h3m4)
 
-`Add your URL here`
-http://100.58.92.202/
+(https://www.linkedin.com/posts/spencerenchill_dmibypravinmishra-agenticai-devops-share-7485964919578910721-J6s3/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGRQq6IBvhyFikdnuZmUnAgoctctbC0h3m4)
+
 ---
 
 #### Screenshot — LinkedIn post showing the deployed CodeTrack application
