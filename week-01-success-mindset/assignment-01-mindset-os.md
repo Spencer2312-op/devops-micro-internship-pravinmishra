@@ -351,7 +351,7 @@ I will make sure to try and finish my assignments right after class
 
 Paste your LinkedIn post link here:
 
-`Add your URL here`
+
 
 ---
 

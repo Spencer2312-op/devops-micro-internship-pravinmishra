@@ -169,7 +169,6 @@ An array is a variable that can hold multiple values at once instead of just one
 
 **2. Why are arrays useful in scripts?**
 
-Add your answer here.
 They let you group related items together and process them all with a single loop, rather than writing repetitive code for each item. If I wanted to add a new tool to the checklist, I just add it to the array  the rest of the script handles it automatically.
 ---
 
