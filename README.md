@@ -131,10 +131,10 @@ This is not a course. It is an internship-style program — real deployments, re
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics |✅ Completed | ⏳ Pending | — | — |
-| 01 | Success Mindset | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/spencerenchill_join-the-dmi-devops-micro-internship-share-7479976395083841536-TG0Q/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGRQq6IBvhyFikdnuZmUnAgoctctbC0h3m4| https://medium.com/@s.q.enchill/from-zero-to-infrastructure-how-spencer-enchill-built-a-career-in-ai-systems-fe3cd37ef0f7|
+| 01 | Success Mindset | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/spencerenchill_join-the-dmi-devops-micro-internship-activity-7479976397994708993-cINf?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGRQq6IBvhyFikdnuZmUnAgoctctbC0h3m4|https://medium.com/@s.q.enchill/from-zero-to-infrastructure-how-spencer-enchill-built-a-career-in-ai-systems-fe3cd37ef0f7?sharedUserId=s.q.enchill|
 | 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
 | 03 | Linux & Bash for DevOps | ✅ Completed |✅ Completed | https://www.linkedin.com/posts/spencerenchill_dmibypravinmishra-agenticai-claudecode-ugcPost-7483847318698614785-LEQu/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGRQq6IBvhyFikdnuZmUnAgoctctbC0h3m4 |https://medium.com/@s.q.enchill/week-3-assignment-6-complete-ai-assisted-linux-incident-triage-just-finished-building-a-full-c8e86e2c6839?sharedUserId=s.q.enchill |
-| 04 | Git & GitHub | ✅ Completed | ✅ Completed|https://www.linkedin.com/posts/spencerenchill_dmibypravinmishra-agenticai-devops-share-7486306499208675328-6X6O/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGRQq6IBvhyFikdnuZmUnAgoctctbC0h3m4 | — |
+| 04 | Git & GitHub | ✅ Completed | ✅ Completed|https://www.linkedin.com/posts/spencerenchill_dmibypravinmishra-agenticai-devops-share-7486306499208675328-6X6O/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGRQq6IBvhyFikdnuZmUnAgoctctbC0h3m4 | https://medium.com/@s.q.enchill/theres-a-moment-every-developer-dreads-you-push-your-code-and-seconds-later-realize-you-just-3aa8c2439e0f |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |

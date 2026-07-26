@@ -126,11 +126,7 @@ Write as if a journalist is writing about you **3 to 7 years from now** (not 20 
 * Blogspot
 * Personal blog
 * Portfolio page
-
-Include this line:
-
-> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-blog&utm_campaign=cohort3**
-
+ 
 ## Your Article
 
 **From Zero to Infrastructure: How Spencer Enchill Built a Career in AI Systems**
@@ -149,10 +145,7 @@ Looking back, the throughline wasn't talent or connections — it was consistenc
 
 ### Public Link
 
-https://www.linkedin.com/posts/spencerenchill_join-the-dmi-devops-micro-internship-share-7479976395083841536-TG0Q/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGRQq6IBvhyFikdnuZmUnAgoctctbC0h3m4
-
-`Add your URL here`
-
+https://www.linkedin.com/posts/spencerenchill_join-the-dmi-devops-micro-internship-activity-7479976397994708993-cINf?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGRQq6IBvhyFikdnuZmUnAgoctctbC0h3m4
 ---
 
 # Assignment 4. Have you ever cut corners (unethical / dishonest / shortcut behavior — not necessarily illegal)? If yes, how did it make you feel?
@@ -253,10 +246,7 @@ List topics only. No need to share numbers.
 * Study or deep work sessions
 * Sleep hours and physical exercise
 * Monthly spending and savings tracker
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
+
 
 ---
 
@@ -282,7 +272,7 @@ Examples:
 
 Answer: No
 
-Add your answer here...
+
 
 ---
 
@@ -348,8 +338,7 @@ I have not noticed any weakness
 I will make sure to try and finish my assignments right after class
 
 ### LinkedIn Post
-
-Paste your LinkedIn post link here:
+https://www.linkedin.com/posts/spencerenchill_join-the-dmi-devops-micro-internship-activity-7479976397994708993-cINf?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGRQq6IBvhyFikdnuZmUnAgoctctbC0h3m4
 
 
 
