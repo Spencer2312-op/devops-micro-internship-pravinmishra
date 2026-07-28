@@ -34,7 +34,7 @@ Replace `task-1-chatgpt.png` with your actual screenshot file name.
 
 ## What I Learned (2–3 lines)
 
-Add your answer here...
+This task showed me how useful ChatGPT can be when I'm learning something new in DevOps. I realized that writing a clear, detailed prompt matters just as much as the question itself, since it shapes how useful the answer is. The soccer analogy made protocols click for me right away, since it's something I already understood outside of tech.
 
 ---
 
@@ -58,8 +58,7 @@ Write a short explanation (**100–150 words**) that includes:
 💡 **Tip:** You may use ChatGPT (as demonstrated in Task 1) to refine your explanation.
 
 ## Answer
-
-Add your answer here...
+When someone visits EpicReads from anywhere in the world, their device first needs to reach the server in Finland where the website is hosted. Every device on the internet has a unique IP address, which works like a postal address so data knows where to go. The connection uses TCP/IP, where TCP makes sure data arrives complete and in order, and IP handles routing it to the right destination. Instead of sending the whole webpage at once, the data is broken into small packets that travel independently across different networks and get reassembled once they arrive. This is called packet switching, and it's what makes the internet fast and resilient. Once the connection is set up, the browser sends an HTTP (or HTTPS for encrypted, secure connections) request to ask the server for the webpage, and the server sends the content back the same way.
 
 ---
 
@@ -102,18 +101,17 @@ Replace `task-3-diagram.png` with your actual diagram file name.
 
 ### Frontend
 
-* Add your answer here...
-* Add your answer here...
+* React
+* HTML/CSS/JavaScript
 
 ### Backend
 
-* Add your answer here...
-* Add your answer here...
-
+* Node.js (Express)
+* Python (Flask)
 ### Database
 
-* Add your answer here...
-* Add your answer here...
+* PostgreSQL
+* MongoDB
 
 ---
 
@@ -142,7 +140,7 @@ In **50–100 words**, explain in your own words:
 
 ## Answer
 
-Add your answer here...
+DNS (Domain Name System) works like the internet's phone book, translating human-friendly domain names into the IP addresses computers actually use to locate servers. Instead of typing 52.172.142.222:3000 to reach EpicReads, users can simply type epicreads.com. To connect this domain to the bookstore's server, you'd use an A record, since it maps a domain name directly to an IPv4 address, which is exactly what 52.172.142.222 is.
 
 ---
 
@@ -207,19 +205,13 @@ Clearly structure your post into the following sections:
 * DNS
 * VS Code Setup
 
-Add the following credit note at the end of your post:
-
-> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by Pravin Mishra. My graded progress is public: https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=cohort3**
 
 ---
 
 ## LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
+https://www.linkedin.com/posts/spencerenchill_devops-micro-internship-dmi-by-pravin-activity-7460646162405052416-9_C8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGRQq6IBvhyFikdnuZmUnAgoctctbC0h3m4
 
-```text
-Add your URL here...
-```
 
 ---
 
@@ -227,7 +219,43 @@ Add your URL here...
 
 Paste the full text of your LinkedIn post here:
 
-Add your post content here...
+My Devops Internship journey — and here's what I learned!
+
+I've been exploring the fundamentals of networking, web infrastructure, and development tools through a hands-on project called EpicReads — an online bookstore. Here's a breakdown of what I covered today:
+
+ChatGPT & Prompt Engineering
+
+I learned how to write clear, structured prompts to get better answers from AI tools. A network protocol is a set of rules that allows devices to communicate and exchange information correctly over a network — think of it like traffic rules on a road. Everyone follows the same signals so there's no chaos. Tools like HTTPS keep that communication safe and secure.
+
+🌍 Internet & Networking
+
+When someone visits EpicReads from anywhere in the world, their device uses an IP Address to locate the website (hosted in Finland). Data is broken into smaller pieces using Packet Switching, making transfers faster and more reliable. TCP/IP manages how that data is sent and received, while HTTP/HTTPS handles how pages load in your browser. HTPS is the secure version — especially important for logins and payments.
+
+🏗️ App Architecture
+
+I explored two ways to build a web app:
+
+• 2-Tier App — The Frontend (React/HTML/CSS) talks directly to the Database (PostgreSQL/MySQL). Simple, but less secure and harder to scale.
+
+• 3-Tier App — A Backend layer (Node.js/Django) sits between the Frontend and Database, handling business logic and security. This is the industry standard.
+
+I also drew both diagrams by hand to solidify my understanding!
+
+🌐 DNS (Domain Name System)
+
+DNS is like the internet's phonebook. It converts easy-to-remember names like epicreads.com into IP addresses that computers actually use. Without it, we'd have to type long numeric addresses to visit any website. To connect epicreads.com to its IP address (52.172.142.222), an A Record is used — it links the domain name directly to an IPv4 address.
+
+💻 VS Code Setup
+
+I set up Visual Studio Code as my development environment, explored the terminal, and got familiar with the workspace. A small but important step in building real developer habits.
+
+---
+
+Every expert was once a beginner. Today was my first step. 💪
+
+hashtag#DevOps hashtag#CloudComputing hashtag#TechJourney hashtag#DevOpsIntern 
+
+**P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by Pravin Mishra. My graded progress is public: https://lnkd.in/eDCsrUSV · Start your DevOps journey: https://lnkd.in/eTZsrS8P
 
 ---
 
@@ -235,19 +263,19 @@ Add your post content here...
 
 ### What did you find easy?
 
-Add your answer here...
+Writing the ChatGPT prompt and understanding networking concepts like protocols and IP addresses came pretty naturally once I had a real-life analogy to connect them to. The soccer analogy for protocols especially made things click fast.
 
 ---
 
 ### What was difficult?
 
-Add your answer here...
+Figuring out which DNS record type to use for Task 4 was the trickiest part. I hadn't worked with A records, AAAA records, or CNAME before, so I needed it explained before I could confidently pick the right one.
 
 ---
 
 ### What will you improve next week?
 
-Add your answer here...
+I want to get more comfortable identifying the right networking concept on my own before asking for the answer, especially with DNS records, since that came up as a gap this week.
 
 ---
 
